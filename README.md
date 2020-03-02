@@ -1,2 +1,1 @@
-# java-utils
-my java utils
+Petite compilation de classes utilitaires. 
