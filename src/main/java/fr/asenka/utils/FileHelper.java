@@ -143,9 +143,6 @@ public class FileHelper {
 	
 	public static int deleteFiles(Path targetDirPath, Filter<Path> filter, boolean recursive) throws IOException {
 		
-		if (filter == DIRECTORY_FILTER && recursive)
-			throw new IllegalArgumentException("L'usage de DIRECTORY_FILTER n'est pas autorisé en récursif");
-		
 		int count = 0;
 		for (Path path : getPaths(targetDirPath, ALL)) { 
 			
